@@ -8,9 +8,14 @@ import router from './router'
 // the style for Vuetify.
 import 'vuetify/dist/vuetify.min.css'
 
-Vue.config.productionTip = false
+// import local settiongs.
+import LocalSettings from './settings'
 
+Vue.config.productionTip = false
+// load Vuetify.
 Vue.use(Vuetify)
+// use local settings.
+Vue.use(LocalSettings)
 
 /* eslint-disable no-new */
 new Vue({

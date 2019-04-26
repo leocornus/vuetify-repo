@@ -90,6 +90,14 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+
+  methods: {
+  },
+
+  created() {
+
+    this.msg = this.$localSettings.applicationName;
   }
 }
 </script>
