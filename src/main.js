@@ -7,13 +7,17 @@ import router from './router'
 
 // the style for Vuetify.
 import 'vuetify/dist/vuetify.min.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 // import local settiongs.
 import LocalSettings from './settings'
 
 Vue.config.productionTip = false
 // load Vuetify.
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+ iconfont: 'md'
+})
+
 // use local settings.
 Vue.use(LocalSettings)
 
