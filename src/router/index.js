@@ -2,36 +2,29 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import vt from '@/components/vuetify'
-import SimpleLayout from '@/components/start/SimpleLayout'
+
+// load the start application.
+import startApp from './start'
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
+let routes = [
     {
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
     },
+
     {
       path: '/vt',
       name: 'vt',
       component: vt
-    },
-
-    {
-        path: '/start',
-        component: SimpleLayout,
-        // set the home page for /start
-        redirect: '/start/vt',
-        // set the children
-        children: [
-            {
-                path: 'vt',
-                name: 'StartVt',
-                component: vt
-            }
-        ]
     }
-  ]
+]
+
+// add the start application.
+routes.push(startApp)
+
+export default new Router({
+    "routes": routes
 })
