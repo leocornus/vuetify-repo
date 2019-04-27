@@ -1,4 +1,4 @@
-import vt from '@/components/vuetify'
+import vt from '@/components/start/vuetify'
 import SimpleLayout from '@/components/start/SimpleLayout'
 
 // read the reference here:
