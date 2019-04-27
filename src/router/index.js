@@ -11,14 +11,7 @@ Vue.use(Router)
 let routes = [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-
-    {
-      path: '/vt',
-      name: 'vt',
-      component: vt
+      redirect: '/start'
     }
 ]
 
