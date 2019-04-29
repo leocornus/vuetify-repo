@@ -1,15 +1,6 @@
 <template>
 <div>
-  <v-toolbar color="indigo" dark fixed app>
-    <v-toolbar-side-icon></v-toolbar-side-icon>
-    <v-toolbar-title>Toolbar Grid Footer</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-btn icon><v-icon>search</v-icon></v-btn>
-    <v-btn icon><v-icon>apps</v-icon></v-btn>
-  </v-toolbar>
-
-  <v-content>
-  <v-container grid-list-md text-xs-center>
+<v-container grid-list-md text-xs-center>
   <v-layout row wrap>
     <v-flex xs12>
       <v-card dark color="red">
@@ -25,8 +16,7 @@
       </v-card>
     </v-flex>
   </v-layout>
-  </v-container>
-  </v-content>
+</v-container>
 </div>
 </template>
 
