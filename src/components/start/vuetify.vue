@@ -10,7 +10,7 @@
       </v-card>
     </v-flex>
 
-    <v-flex v-for="i in 12 * 12" :key="`6${i}`" xs1>
+    <v-flex v-for="i in 12 * 120" :key="`6${i}`" xs1>
       <v-card dark :color="`#${(i * 50).toString(16)}`"
         <v-card-text class="px-0">{{i}}</v-card-text>
       </v-card>

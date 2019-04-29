@@ -11,6 +11,22 @@
   <v-content>
     <router-view/>
   </v-content>
+
+  <v-footer height="auto" color="indigo" app>
+    <v-layout
+      justify-center
+      row
+      wrap
+    >
+      <v-flex
+        py-3
+        text-xs-center white--text
+        xs12
+      >
+        &copy;2019 — <strong>Leocornus LTD.</strong>
+      </v-flex>
+    </v-layout>
+  </v-footer>
 </v-app>
 </template>
 <script>
