@@ -5,7 +5,7 @@
     <v-flex xs12>
       <v-card dark color="red">
         <v-card-text class="px-0">
-          Hello Vuetify World!
+          {{message}}
         </v-card-text>
       </v-card>
     </v-flex>
@@ -24,12 +24,16 @@
 export default {
   name: 'VuetifyScratchPad',
   data () {
-    return {};
+    return {
+      message: '',
+    };
   },
 
   methods: {
   },
   created() {
+
+    this.message = this.$localSettings.applicationName;
   }
 }
 </script>
