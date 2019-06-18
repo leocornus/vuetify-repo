@@ -1,5 +1,6 @@
 import vt from '@/components/start/vuetify'
 import SimpleLayout from '@/components/start/SimpleLayout'
+import AnimationIntro from '@/apps/start/AnimationIntro'
 
 // read the reference here:
 // https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
@@ -16,6 +17,11 @@ export default {
             path: 'vt',
             name: 'StartVt',
             component: vt
+        },
+        {
+            path: 'animationIntro',
+            name: 'Animation Introduce',
+            component: AnimationIntro
         }
     ]
 }
