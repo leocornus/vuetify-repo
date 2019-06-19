@@ -8,6 +8,9 @@
   <v-btn icon>
     <v-icon>more_vert</v-icon>
   </v-btn>
+  <v-btn icon>
+    <v-icon>expand_less</v-icon>
+  </v-btn>
 </v-toolbar>
 <v-card>
   <v-card-title primary-title>
