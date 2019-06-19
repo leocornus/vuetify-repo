@@ -1,16 +1,25 @@
 <template>
 <div id="list-demo">
-  <v-btn v-on:click="add" color="success">Add</v-btn>
-  <v-btn v-on:click="remove" color="red">Remove</v-btn>
-  <transition-group name="list" tag="p">
-    <v-btn color="info"
-           small 
-           v-for="item in items" 
-           v-bind:key="item" 
-           class="list-item">
-      {{ item }}
-    </v-btn>
-  </transition-group>
+<v-card>
+  <v-card-title primary-title>
+    <div>
+      <h3 class="headline mb-0">Animation with Transition Group</h3>
+      <transition-group name="list" tag="p">
+        <v-btn color="info"
+               small 
+               v-for="item in items" 
+               v-bind:key="item" 
+               class="list-item">
+          {{ item }}
+        </v-btn>
+      </transition-group>
+    </div>
+  </v-card-title>
+  <v-card-actions>
+    <v-btn v-on:click="add" color="success">Add</v-btn>
+    <v-btn v-on:click="remove" color="red">Remove</v-btn>
+  </v-card-actions>
+</v-card>
 </div>
 </template>
 
