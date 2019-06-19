@@ -14,6 +14,7 @@ import LocalSettings from './settings'
 
 Vue.config.productionTip = false
 // load Vuetify.
+// all icons could be found here: https://material.io/tools/icons/
 Vue.use(Vuetify, {
  iconfont: 'md'
 })
