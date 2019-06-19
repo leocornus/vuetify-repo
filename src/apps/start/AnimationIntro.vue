@@ -1,11 +1,11 @@
 <template>
 <div id="list-demo">
-  <button v-on:click="add">Add</button>
-  <button v-on:click="remove">Remove</button>
+  <v-btn v-on:click="add" color="success">Add</v-btn>
+  <v-btn v-on:click="remove" color="red">Remove</v-btn>
   <transition-group name="list" tag="p">
-    <span v-for="item in items" v-bind:key="item" class="list-item">
+    <v-btn v-for="item in items" v-bind:key="item" class="list-item">
       {{ item }}
-    </span>
+    </v-btn>
   </transition-group>
 </div>
 </template>
