@@ -1,30 +1,41 @@
 <template>
-<div id="list-demo">
+<v-container grid-list-xs>
+<v-layout id="list-demo">
+    <v-flex xs12 sm4>
+<v-toolbar dense>
+  <v-toolbar-title>Animation with transition group</v-toolbar-title>
+  <v-spacer></v-spacer>
+  <v-btn icon>
+    <v-icon>more_vert</v-icon>
+  </v-btn>
+</v-toolbar>
 <v-card>
   <v-card-title primary-title>
-    <div>
-      <h3 class="headline mb-0">Animation with Transition Group</h3>
-      <transition-group name="list" tag="p">
-        <v-btn color="info"
-               small 
-               v-for="item in items" 
-               v-bind:key="item" 
-               class="list-item">
-          {{ item }}
-        </v-btn>
-      </transition-group>
-    </div>
+    <transition-group name="list" tag="div">
+      <v-btn color="info"
+             small 
+             v-for="item in items" 
+             v-bind:key="item" 
+             class="list-item">
+        {{ item }}
+      </v-btn>
+    </transition-group>
   </v-card-title>
   <v-card-actions>
     <v-btn v-on:click="add" color="success">Add</v-btn>
     <v-btn v-on:click="remove" color="red">Remove</v-btn>
   </v-card-actions>
 </v-card>
-</div>
+  </v-flex>
+</v-layout>
+</v-container>
 </template>
 
 <script>
 export default {
+  // the grid system has details:
+  // https://vuetifyjs.com/en/framework/grid
+
   el: '#list-demo',
 
   data() {
