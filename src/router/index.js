@@ -9,6 +9,7 @@ import inspectorApp from './inspector'
 
 Vue.use(Router)
 
+// setup redirect for the root path
 let routes = [
     {
       path: '/',
